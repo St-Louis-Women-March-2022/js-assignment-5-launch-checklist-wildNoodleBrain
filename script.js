@@ -2,7 +2,7 @@
 
 //const { myFetch, pickPlanet, addDestinationInfo, formSubmission } = require("./scriptHelper");
 
-window.addEventListener("load", function () {
+window.addEventListener("load", ()=>  {
     let form = document.querySelector("form");
     form.addEventListener("submit", function (event) {
         event.preventDefault();
@@ -38,6 +38,7 @@ window.addEventListener("load", function () {
         let diameter = planet.diameter;
         let star = planet.star;
         let distance = planet.distance;
+        let imageUrl = planet.image;
         let moons = planet.moons;
         addDestinationInfo(document, name, diameter, star, distance, moons, imageUrl);
     })
